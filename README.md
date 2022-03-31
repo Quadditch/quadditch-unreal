@@ -7,33 +7,61 @@ didn't know how to do something the "right" way.
 ### Licensed content required:
 [Quadcopters](https://unrealengine.com/marketplace/en-US/product/quadcopters) package. When you add the files back in don't forget to remove the gitignores. Add the following file structure
 
+
 Content/Quadcopters/
+
 &emsp;    /Cue
+
 &emsp;&emsp;        /SC_QuadcoptersAudio.uasset
+
 &emsp;    /Materials
+
 &emsp;&emsp;        /Inner_Collision.uasset
+
 &emsp;&emsp;        /M_QuadcopterA_Master_01.uasset
+
 &emsp;&emsp;        /M_QuadcopterA_Master_02.uasset
+
 &emsp;&emsp;        /MI_QuadcopterA_01.uasset
+
 &emsp;&emsp;        /MI_QuadcopterA_02.uasset
+
 &emsp;&emsp;        /MI_QuadcopterA_03.uasset
+
 &emsp;&emsp;        /MI_QuadcopterA_04_BLUE.uasset
+
 &emsp;&emsp;        /Outer_Collision.uasset
+
 &emsp;    /Mesh
+
 &emsp;&emsp;        /SM_QuadcopterA_Cam.uasset
+
 &emsp;&emsp;        /SM_QuadcopterA_Main.uasset
+
 &emsp;&emsp;        /SM_QuadcopterA_Rotor.uasset
+
 &emsp;    /Textures
+
 &emsp;&emsp;        /T_QuadcopterA_BC_01.uasset
+
 &emsp;&emsp;        /T_QuadcopterA_BC_02.uasset
+
 &emsp;&emsp;        /T_QuadcopterA_M_01.uasset
+
 &emsp;&emsp;        /T_QuadcopterA_M_02.uasset
+
 &emsp;&emsp;        /T_QuadcopterA_M_03.uasset
+
 &emsp;&emsp;        /T_QuadcopterA_M_04.uasset
+
 &emsp;&emsp;        /T_QuadcopterA_N.uasset
+
 &emsp;    /Wav
+
 &emsp;&emsp;        /S_QuadcoptersAudio.uasset
 
+
+The files in Content/Quidditch_Assets were taken from this [package of quidditch assets]((https://sketchfab.com/3d-models/quidditch-assets-1bd62f6e20c8414484b9ede6a3458f78), licensed under [CC Attribution](https://creativecommons.org/licenses/by/4.0/)
 
 
 ### Things to change before running:
