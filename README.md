@@ -1,8 +1,8 @@
 
 ### Development Tips
-You'll need unreal engine 4.25 and Visual Studio 2019 to develop. Most work can be done in the unreal engine editor on the blueprints, but some things (especially the ROSIntegration stuff)
-need to be done in VS. If something seems overcomplicated or suboptimal, chances are I had to do it that way to get things working. It could also be that this was my first UE project and I
-didn't know how to do something the "right" way.
+You'll need Unreal Engine 4.25 and Visual Studio 2019 to develop. Most work can be done in the Unreal Engine editor on the blueprints, but some things (especially the ROSIntegration stuff)
+need to be done in VS. If something seems overcomplicated or suboptimal, chances are I had to do it that way to get things working. It could also be that I didn't know how to do something 
+the "right" way because I am not an expert in Unreal Engine development.
 
 Ideally for things like takeoff and landing we would use ROS actions to robustly and flexibly handle things like takeoff. Unfortunately the ROSIntegration plugin for UE4 does not support actions.
 Alternatively we could use services and have the drone respond whenever it is done with the task. Unfortunately the ROSIntegration plugin does not support services running for longer than five seconds.
