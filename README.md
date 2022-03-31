@@ -61,7 +61,7 @@ Content/Quadcopters/
 &emsp;&emsp;        /S_QuadcoptersAudio.uasset
 
 
-The files in Content/Quidditch_Assets were taken from this [package of quidditch assets]((https://sketchfab.com/3d-models/quidditch-assets-1bd62f6e20c8414484b9ede6a3458f78), licensed under [CC Attribution](https://creativecommons.org/licenses/by/4.0/)
+The files in Content/Quidditch_Assets were taken from this [package of quidditch assets](https://sketchfab.com/3d-models/quidditch-assets-1bd62f6e20c8414484b9ede6a3458f78), licensed under [CC Attribution](https://creativecommons.org/licenses/by/4.0/)
 
 
 ### Things to change before running:
