@@ -16,6 +16,9 @@ For my evaluation environment I run at least two game instances, as well as an U
 The most important parameter to change is the ROS bridge IP, which is set in the Content/ROS/Blueprints/BP_ROS_GAME. If your game starts with a black screen and appears unresponsive, it is most likely
 that it is blocking on attempting to connect to the server.
 
+
+
+
 ### Trouble building (missing symbols about topic / service conversion)?
 
 1. Delete sln/intermediate/saved/binaries\
@@ -56,3 +59,25 @@ Content/Quadcopters/ \
 
 
 The files in Content/Quidditch_Assets were taken from this [package of quidditch assets](https://sketchfab.com/3d-models/quidditch-assets-1bd62f6e20c8414484b9ede6a3458f78), licensed under [CC Attribution](https://creativecommons.org/licenses/by/4.0/)
+
+
+
+## Tasks
+- [ ] Debug MR alignment - get posts locked-in
+- [ ] Sometimes the home orientation is slightly off
+- [ ] Add proportional force to barrier repulsion (currently just integral)
+- [ ] Drones hit intermediate waypoint early on landing
+- [ ] Set TKL points in-game - send in local coordinates, UAV will convert to GPS
+- [ ] Auto-assign team based on location relative to drone-cage
+- [ ] Quaffle spawn mechanics
+- [ ] Bludger - faster than quaffle, lock on (?)
+- [ ] Only connect to ROS if server
+- [ ] Server IP parameter in-game - somehow adjust ROSIntegration to not autoconnect at start
+- [ ] package into binary
+- [ ] situational awareness
+  - [ ] arrow indicators
+  - [ ] minimap
+  - [ ] collision notification
+- [ ] code architecture diagrams
+- [ ] segregate field halves so drone can only be on their own team's half
+- [ ] use USB IDs or something to match up video receivers with the correct player assignments
