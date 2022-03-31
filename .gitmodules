@@ -1,0 +1,6 @@
+[submodule "Plugins/ROSIntegration"]
+	path = Plugins/ROSIntegration
+	url = git@github.com:Quadditch/ROSIntegration.git
+[submodule ".\\Plugins\\ROSIntegration"]
+	path = .\\Plugins\\ROSIntegration
+	url = git@github.com:Quadditch/ROSIntegration.git
