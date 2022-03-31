@@ -8,8 +8,7 @@ didn't know how to do something the "right" way.
 [Quadcopters](https://unrealengine.com/marketplace/en-US/product/quadcopters) package. When you add the files back in don't forget to remove the gitignores. Add the following file structure
 
 
-Content/Quadcopters/
-
+Content/Quadcopters/ \
 &emsp;    /Cue \
 &emsp;&emsp;        /SC_QuadcoptersAudio.uasset \
 &emsp;    /Materials \
@@ -34,7 +33,7 @@ Content/Quadcopters/
 &emsp;&emsp;        /T_QuadcopterA_M_04.uasset \
 &emsp;&emsp;        /T_QuadcopterA_N.uasset \
 &emsp;    /Wav \
-&emsp;&emsp;        /S_QuadcoptersAudio.uasset \
+&emsp;&emsp;        /S_QuadcoptersAudio.uasset
 
 
 The files in Content/Quidditch_Assets were taken from this [package of quidditch assets](https://sketchfab.com/3d-models/quidditch-assets-1bd62f6e20c8414484b9ede6a3458f78), licensed under [CC Attribution](https://creativecommons.org/licenses/by/4.0/)
