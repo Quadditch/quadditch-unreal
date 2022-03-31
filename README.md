@@ -1,12 +1,30 @@
 
+### Development Tips
 You'll need unreal engine 4.25 and Visual Studio 2019 to develop. Most work can be done in the unreal engine editor on the blueprints, but some things (especially the ROSIntegration stuff)
 need to be done in VS. If something seems overcomplicated or suboptimal, chances are I had to do it that way to get things working. It could also be that this was my first UE project and I
 didn't know how to do something the "right" way.
 
+Ideally for things like takeoff and landing we would use ROS actions to robustly and flexibly handle things like takeoff. Unfortunately the ROSIntegration plugin for UE4 does not support actions.
+Alternatively we could use services and have the drone respond whenever it is done with the task. Unfortunately the ROSIntegration plugin does not support services running for longer than five seconds.
+What we have to do is run a service to let the drone know to take off, and the response is simply an ack. Then the drone will use a different service to let us know it finished.
+I initially did this with messages but sometimes they get dropped and I didn't want to deal with the extra complexity of all the acks going back and forth.
+
+I recommend playing in standalone, offline mode. Offline is required because the user decides if a game will be a server or the client, so UE4's native attempt to automatically start a server will interfere.
+
+For my evaluation environment I run at least two game instances, as well as an Ubuntu virtual machine to handle the Gazebo simulation and ROS stuff.
+
+The most important parameter to change is the ROS bridge IP, which is set in the Content/ROS/Blueprints/BP_ROS_GAME. If your game starts with a black screen and appears unresponsive, it is most likely
+that it is blocking on attempting to connect to the server.
+
+### Trouble building (missing symbols about topic / service conversion)?
+
+1. Delete sln/intermediate/saved/binaries\
+1. Use bat file to rebuild ROSIntegration plugin
+1. generate visual studio files (to make new sln)
+1. build again
 
 ### Licensed content required:
 [Quadcopters](https://unrealengine.com/marketplace/en-US/product/quadcopters) package. When you add the files back in don't forget to remove the gitignores. Add the following file structure
-
 
 Content/Quadcopters/ \
 &emsp;    /Cue \
@@ -36,22 +54,5 @@ Content/Quadcopters/ \
 &emsp;&emsp;        /S_QuadcoptersAudio.uasset
 
 
+
 The files in Content/Quidditch_Assets were taken from this [package of quidditch assets](https://sketchfab.com/3d-models/quidditch-assets-1bd62f6e20c8414484b9ede6a3458f78), licensed under [CC Attribution](https://creativecommons.org/licenses/by/4.0/)
-
-
-### Things to change before running:
-- In ROS game instance, change IP/Port to your ROS machine
-
-Ideally for things like takeoff and landing we would use ROS actions to robustly and flexibly handle things like takeoff. Unfortunately the ROSIntegration plugin for UE4 does not support actions.
-Alternatively we could use services and have the drone respond whenever it is done with the task. Unfortunately the ROSIntegration plugin does not support services running for longer than five seconds.
-What we have to do is run a service to let the drone know to take off, and the response is simply an ack. Then the drone will use a different service to let us know it finished.
-I initially did this with messages but sometimes they get dropped and I didn't want to deal with the extra complexity of all the acks going back and forth.
-
-
-
-### Trouble building (missing symbols about topic / service conversion)?
-
-1. Delete sln/intermediate/saved/binaries\
-1. Use bat file to rebuild ROSIntegration plugin
-1. generate visual studio files (to make new sln)
-1. build again
