@@ -83,3 +83,4 @@ The files in Content/Quidditch_Assets were taken from this [package of quidditch
 - [ ] use USB IDs or something to match up video receivers with the correct player assignments
 - [ ] Fix Quaffle mesh so origin is in center of ball
 - [ ] Change bludger to separate mesh / texture
+- [ ] Cooldown loading indicator for quaffle and bludger
