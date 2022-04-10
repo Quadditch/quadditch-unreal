@@ -81,3 +81,5 @@ The files in Content/Quidditch_Assets were taken from this [package of quidditch
 - [ ] code architecture diagrams
 - [ ] segregate field halves so drone can only be on their own team's half
 - [ ] use USB IDs or something to match up video receivers with the correct player assignments
+- [ ] Fix Quaffle mesh so origin is in center of ball
+- [ ] Change bludger to separate mesh / texture
