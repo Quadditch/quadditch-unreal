@@ -7,7 +7,7 @@ Alternatively we could use services and have the drone respond whenever it is do
 What we have to do is run a service to let the drone know to take off, and the response is simply an ack. Then the drone will use a different service to let us know it finished.
 I initially did this with messages but sometimes they get dropped and I didn't want to deal with the extra complexity of all the acks going back and forth.
 
-I recommend playing in standalone, offline mode. Offline is required because the user decides if a game will be a server or the client, so UE4's native attempt to automatically start a server will interfere.
+I recommend playing in standalone, offline mode. Running in editor causes weird problems when connecting to ROS. Offline is required because the user decides if a game will be a server or the client, so UE4's native attempt to automatically start a server will interfere.
 
 For my evaluation environment I run at least two game instances, as well as an Ubuntu virtual machine to handle the Gazebo simulation and ROS stuff.
 
@@ -15,6 +15,13 @@ The most important parameter to change is the ROS bridge IP, which is set in the
 that it is blocking on attempting to connect to the server.
 
 
+### Software Explanation
+
+ToDo diagram
+
+Most important stuff happens in the quadcopter blueprint
+
+ToDo explain game state game mode etc.
 
 
 ### Trouble building (missing symbols about topic / service conversion)?
