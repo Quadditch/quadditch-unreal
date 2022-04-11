@@ -1,8 +1,6 @@
 
 ### Development Tips
-You'll need Unreal Engine 4.25 and Visual Studio 2019 to develop. Most work can be done in the Unreal Engine editor on the blueprints, but some things (especially the ROSIntegration stuff)
-need to be done in VS. If something seems overcomplicated or suboptimal, chances are I had to do it that way to get things working. It could also be that I didn't know how to do something 
-the "right" way because I am not an expert in Unreal Engine development.
+You'll need Unreal Engine 4.25 and Visual Studio 2019 to develop. Most work can be done in the Unreal Engine editor on the blueprints, but some things (especially the ROSIntegration stuff) need to be done in VS. If something seems overcomplicated or suboptimal, chances are I had to do it that way to get things working.
 
 Ideally for things like takeoff and landing we would use ROS actions to robustly and flexibly handle things like takeoff. Unfortunately the ROSIntegration plugin for UE4 does not support actions.
 Alternatively we could use services and have the drone respond whenever it is done with the task. Unfortunately the ROSIntegration plugin does not support services running for longer than five seconds.
@@ -70,7 +68,6 @@ The files in Content/Quidditch_Assets were taken from this [package of quidditch
 - [ ] Set TKL points in-game - send in local coordinates, UAV will convert to GPS
 - [ ] Auto-assign team based on location relative to drone-cage
 - [ ] Quaffle spawn mechanics
-- [ ] Bludger - faster than quaffle, lock on (?)
 - [ ] Only connect to ROS if server
 - [ ] Server IP parameter in-game - somehow adjust ROSIntegration to not autoconnect at start
 - [ ] package into binary
