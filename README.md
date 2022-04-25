@@ -17,12 +17,9 @@ that it is blocking on attempting to connect to the server.
 
 ### Software Explanation
 
-ToDo diagram
-
 Most important stuff happens in the quadcopter blueprint
 
-ToDo explain game state game mode etc.
-
+To toggle minimap between follow player and fixed orientation, go to quadcopter blueprint and change the spring arm holding the overhead screen capture object. The property to change is "inherit yaw"
 
 ### Trouble building (missing symbols about topic / service conversion)?
 
@@ -88,3 +85,5 @@ The files in Content/Quidditch_Assets were taken from this [package of quidditch
 - [ ] Fix Quaffle mesh so origin is in center of ball
 - [ ] Change bludger to separate mesh / texture
 - [ ] Cooldown loading indicator for quaffle and bludger
+- [ ] Software architecture diagram
+- [ ] explanation of game state, mode, etc.
