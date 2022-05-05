@@ -19,6 +19,8 @@ that it is blocking on attempting to connect to the server.
 
 Most important stuff happens in the quadcopter blueprint
 
+[This forum post](https://forums.unrealengine.com/t/game-state-game-instance-game-mode-which-one-to-use-for-what/399795/2) is very helpful for understanding how to use the various network-related components of an Unreal Engine game. The page also includes a link to the network compendium, which goes into even more detail.
+
 To toggle minimap between follow player and fixed orientation, go to quadcopter blueprint and change the spring arm holding the overhead screen capture object. The property to change is "inherit yaw"
 
 ### Trouble building (missing symbols about topic / service conversion)?
