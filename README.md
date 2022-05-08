@@ -14,6 +14,8 @@ For my evaluation environment I run at least two game instances, as well as an U
 The most important parameter to change is the ROS bridge IP, which is set in the Content/ROS/Blueprints/BP_ROS_GAME. If your game starts with a black screen and appears unresponsive, it is most likely
 that it is blocking on attempting to connect to the server.
 
+For UI bugs, often refreshing the view (hit 'v' twice) helps.
+
 
 ### Software Explanation
 
