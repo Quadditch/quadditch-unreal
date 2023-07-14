@@ -78,7 +78,6 @@ DerivedDataCache/*
 *.pack
 
 Content/Quadcopters/Cue
-Content/Quadcopters/Materials
 Content/Quadcopters/Mesh
 Content/Quadcopters/Textures
 Content/Quadcopters/Wav
