@@ -33,7 +33,7 @@ To toggle minimap between follow player and fixed orientation, go to quadcopter 
 1. build again
 
 ### Licensed content required:
-[Quadcopters](https://unrealengine.com/marketplace/en-US/product/quadcopters) package. When you add the files back in don't forget to remove the gitignores. Add the following file structure
+[Quadcopters](https://unrealengine.com/marketplace/en-US/product/quadcopters) package. Add the following file structure
 On first startup you will be notified about a missing material for MI_QuadcopterA_04_BLUE.uasset. This is the same as the red quadcopter material, but blue. Make a copy and change the color.
 
 Content/Quadcopters/ \
