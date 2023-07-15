@@ -12,7 +12,7 @@ I recommend playing in standalone, offline mode. Running in editor causes weird 
 For my evaluation environment I run at least two game instances, as well as an Ubuntu virtual machine to handle the Gazebo simulation and ROS stuff.
 
 The most important parameter to change is the ROS bridge IP, which is set in the Content/ROS/Blueprints/BP_ROS_GAME. If your game starts with a black screen and appears unresponsive, it is most likely
-that it is blocking on attempting to connect to the server.
+that it is blocking on attempting to connect to the server. Don't forget to also modify the game host IP (Content/Quadditch/UI/BP_MainMenu) - this should be the computer playing the game, not the VM IP.
 
 For UI bugs, often refreshing the view (hit 'v' twice) helps.
 
